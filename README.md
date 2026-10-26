@@ -54,10 +54,14 @@ Button > breadboard > GPIO pin 27
 - A Raspberry Pi 4 running a compatible Linux distribution. 
 - Python3 (comes pre-installed on Raspberry Pi 4, verify your version with "python --version" not including quotes). 
 - Hardware listed above, mainly Raspberry Pi 4, door sensors, jumper wire, solderless breadboard, physical button, power supply and storage for the Pi, and the camera module. 
-- A Telegram bot and its token. Sensitive credentials are not included in the repository, so ensure you set the following variables before running the notification scripts: 
+- A Telegram bot and its token. 
     - TELEGRAM_BOT_TOKEN - Telegram bot API token
     - TELEGRAM_CHAT_ID - Telegram chat ID that receives security alerts
-- See .env.example for the required configuration variables.
+- To set the above environmental variables, follow the below steps:
+    - Copy .env.example to .env on your local machine.
+    - Fill in your own Telegram bot token and chat ID.
+    - Configure the variables in the environment used to launch the security service.
+    - Never commit your actual .env file.
 ### Setup:
 1. Clone the repository:
     ```bash
